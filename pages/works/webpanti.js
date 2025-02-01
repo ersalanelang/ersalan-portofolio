@@ -21,7 +21,7 @@ const Work = () => (
         During my internship at Dinas Komunikasi Informatika dan Persandian Kota Yogyakarta, I developed a web-based Management Information System for UPT Rumah Pengasuhan Anak Wiloso Projo. The project aimed to address the outdated data management practices, which relied on paper records and Excel spreadsheets, by providing a more efficient and scalable solution.
       </P>
       <P>
-        The system was built using PHP and Laravel for the backend and frontend, with MySQL as the database. It features detailed data management capabilities, along with options to export records into Excel and PDF formats. These functionalities not only simplified the process of managing children’s records but also made it easier to generate accurate reports and ensure secure data storage.
+        The system was built using PHP and Laravel for the backend and frontend, with MySQL as the database. It features detailed data management capabilities, along with options to export records into Excel and PDF formats. These functionalities not only simplified the process of managing children&apos;s records but also made it easier to generate accurate reports and ensure secure data storage.
       </P> 
       <P>
         This project stemmed from a survey I conducted, identifying the need for modernization. By suggesting and implementing a web-based solution, I was able to help the orphanage streamline their operations and prepare for potential online integration in the future.

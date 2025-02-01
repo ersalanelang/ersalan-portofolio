@@ -15,8 +15,8 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-// import { GridItem } from '../components/grid-item'
-// import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoMailOpenOutline } from 'react-icons/io5'
+import { GridItem } from '../components/grid-item'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoMailOpenOutline } from 'react-icons/io5'
 // import thumbYouTube from '../public/images/links/youtube.png'
 // import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -32,7 +32,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, i'm junior programmer based in Indonesia
+        Hello, i&apos;m junior programmer based in Indonesia
       </Box>
 
       {/* <Box display={{ md: 'flex' }}>
@@ -106,7 +106,7 @@ const Home = () => (
           About Me
         </Heading>
         <Paragraph>
-          I am a fresh graduate in Informatics from UPN Veteran Yogyakarta, holding a Bachelor’s degree in 
+          I am a fresh graduate in Informatics from UPN Veteran Yogyakarta, holding a Bachelor&apos;s degree in 
           Computer Science (S.Kom). Passionate about technology and problem-solving, I thrive on tackling 
           challenges through coding and developing innovative solutions. My academic background has equipped 
           me with a strong foundation in programming, software development, and analytical thinking, while 
@@ -150,7 +150,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2024</BioYear>
-          Completed the Bachelor's degree in UPN "Veteran" Yogyakarta
+          Completed the Bachelor&apos;s degree in UPN &quot;Veteran&quot; Yogyakarta
         </BioSection>
         <BioSection>
           <BioYear>2024 to present</BioYear>
