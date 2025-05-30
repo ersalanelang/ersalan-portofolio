@@ -1,8 +1,9 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-// import { GridItem } from '../components/grid-item'
+import { WorkGridItem } from '../components/grid-item'
 
+import thumbBoneAge from '../public/images/works/boneage.jpg'
 // import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portfolio.jpg'
 // import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
 // import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
@@ -20,12 +21,17 @@ const Posts = () => (
       </Heading>
 
       <Section delay={0.1}>
-        <SimpleGrid columns={[1]} gap={6} justifyContent="center" alignItems="center">
-          <div style={{ fontSize: '2rem', fontWeight: 'bold', textAlign: 'center', width: '100%' }}>
-            Coming Soon :^
-          </div>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <WorkGridItem
+            id="sentimentprabowo"  // mengarah ke /works/SentimentPrabowo
+            title="Sentiment Analysis - President Prabowo"
+            thumbnail={thumbBoneAge}
+          >
+            Public Sentiment Analysis on President Prabowo’s First Six Months in Office
+          </WorkGridItem>
         </SimpleGrid>
       </Section>
+
 
       {/* <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
