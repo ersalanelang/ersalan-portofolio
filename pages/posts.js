@@ -27,7 +27,7 @@ const Posts = () => (
             title="Sentiment Analysis - President Prabowo"
             thumbnail={thumbBoneAge}
           >
-            Public Sentiment Analysis on President Prabowo’s First Six Months in Office
+            Public Sentiment Analysis on President Prabowo&rsquo;s First Six Months in Office
           </WorkGridItem>
         </SimpleGrid>
       </Section>

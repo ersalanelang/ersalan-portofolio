@@ -62,7 +62,7 @@ const Work = () => {
         Sentiment Analysis - President Prabowo <Badge>2025</Badge>
       </Title>
       <Text fontSize="2xl" fontWeight="bold" my={4}>
-        Public Sentiment Analysis on President Prabowo’s First Six Months in Office
+        Public Sentiment Analysis on President Prabowo&rsquo;s First Six Months in Office
       </Text>
       <P>
         Following the leadership transition from President Joko Widodo to President Prabowo Subianto, 
@@ -70,10 +70,10 @@ const Work = () => {
         As a data enthusiast, I wanted to explore how the public perceives this leadership shift—particularly 
         through organic commentary on YouTube, a major digital public space in Indonesia. The first six months 
         of a presidency often shape the 
-        early impressions of a leader’s effectiveness.
+        early impressions of a leader&rsquo;s effectiveness.
       </P>
       <P>
-        I collected 1,000 YouTube comments from videos discussing President Prabowo's performance during his 
+        I collected 1,000 YouTube comments from videos discussing President Prabowo&rsquo;s performance during his 
         first six months in office using the YouTube Data API. The keyword used for search was:
       </P>
       <Box textAlign="center" my={4}>
@@ -85,7 +85,7 @@ const Work = () => {
         From the search results, I selected the top 5 most relevant videos and extracted comments from each.
       </P>
       <P>
-        Before analysis, the comments were cleaned by removing URLs, punctuation, and newlines, then converted to lowercase for consistency. Here's a snippet of the preprocessing function:
+        Before analysis, the comments were cleaned by removing URLs, punctuation, and newlines, then converted to lowercase for consistency. Here&rsquo;s a snippet of the preprocessing function:
       </P>   
       <Box position="relative" my={4} borderRadius="md" overflow="hidden" border="1px solid #444">
         <Flex justify="space-between" align="center" p={2} bg="#282a36">
