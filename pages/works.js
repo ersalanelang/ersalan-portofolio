@@ -4,6 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import thumbWebPanti from '../public/images/works/webpanti.png'
 import thumbBoneAge from '../public/images/works/boneage.jpg'
+import thumbHealthyDaily from '../public/images/works/healthydaily5.png'
 // import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 // import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
 // import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
@@ -39,6 +40,15 @@ const Works = () => (
             thumbnail={thumbBoneAge}
           >
             Bone Age Assessment using CLAHE with VGG-19 Architecture
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="healthydaily"  //untuk mengarah ke halaman pages/webpanti.js
+            title="HealtyDaily – Home Fitness Design App "
+            thumbnail={thumbHealthyDaily}
+          >
+            Design APP for Fitness based on Android
           </WorkGridItem>
         </Section>
       </SimpleGrid>
