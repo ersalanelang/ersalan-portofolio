@@ -7,7 +7,6 @@ import {
   useToast,  
   Flex,
   Button,
-  Text,
   Box
 } from '@chakra-ui/react'
 import { ExternalLinkIcon, CopyIcon, CheckIcon} from '@chakra-ui/icons'
