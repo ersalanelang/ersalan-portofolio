@@ -52,21 +52,21 @@ const Work = () => (
       <P>
         Each exercise category provides three levels of difficulty: Beginner, Intermediate, and Advanced, to support all users regardless of experience.
       </P>
-      <Box mt={6} maxW="200px" mx="auto">
+      <Box mt={6} maxW="250px" mx="auto">
         <WorkImage src="/images/works/healthydaily1.gif" alt="Login and Register Screen" />
       </Box>
       <P>
         The first screen walkthrough demonstrates the <strong>Login</strong> and <strong>Register</strong> interfaces.
         Users can create an account manually or use third-party options like <strong>Google</strong> or <strong>Facebook</strong> for a quick and seamless login experience.
       </P>
-      <Box mt={6} maxW="200px" mx="auto">
+      <Box mt={6} maxW="250px" mx="auto">
         <WorkImage src="/images/works/healthydaily2.gif" alt="Login and Register Screen" />
       </Box>
       <P>
         The <strong>Home screen</strong> shows personalized fitness data including:
         current weight, calories burned, and steps taken. This dashboard is tailored to help users monitor their progress and stay motivated.
       </P>
-      <Box mt={6} maxW="200px" mx="auto">
+      <Box mt={6} maxW="250px" mx="auto">
         <WorkImage src="/images/works/healthydaily3.gif" alt="Login and Register Screen" />
       </Box>
       <P>
@@ -74,7 +74,7 @@ const Work = () => (
         Each category offers a curated list of routines designed to match the user&rsquo;s goals and fitness level.
       </P>
 
-      <Box mt={6} maxW="200px" mx="auto">
+      <Box mt={6} maxW="250px" mx="auto">
         <WorkImage src="/images/works/healthydaily4.gif" alt="Login and Register Screen" />
       </Box>
       <P>

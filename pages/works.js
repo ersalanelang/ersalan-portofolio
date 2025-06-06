@@ -1,14 +1,12 @@
-import { Container, Heading, SimpleGrid} from '@chakra-ui/react'  //Container, Heading, SimpleGrid, Divider 
+import { Container, Heading, SimpleGrid, Divider} from '@chakra-ui/react'  //Container, Heading, SimpleGrid, Divider 
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import thumbWebPanti from '../public/images/works/webpanti.png'
 import thumbBoneAge from '../public/images/works/boneage.jpg'
 import thumbHealthyDaily from '../public/images/works/healthydaily5.png'
-// import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-// import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-// import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-// import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
+import thumbSHAP from '../public/images/works/shap_summary_plot5.png'
+
 // import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
 // import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
 // import thumbStyly from '../public/images/works/styly_eyecatch.png'
@@ -19,9 +17,12 @@ import thumbHealthyDaily from '../public/images/works/healthydaily5.png'
 const Works = () => (
   <Layout title="Works">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
-        Projects
-      </Heading>
+      <Section delay={0.1}>
+        <Divider my={6} />
+          <Heading as="h3" fontSize={20} mb={4}>
+            Projects
+          </Heading>
+      </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
@@ -51,17 +52,24 @@ const Works = () => (
             Design APP for Fitness based on Android
           </WorkGridItem>
         </Section>
+        <Section>
+          <WorkGridItem
+            id="Explaining-Employee-Attrition-using-SHAP-and-Logistic-Regression"  //untuk mengarah ke halaman pages/webpanti.js
+            title="Explaining Employee Attrition using SHAP and Logistic Regression"
+            thumbnail={thumbSHAP}
+          >
+          </WorkGridItem>
+        </Section>
       </SimpleGrid>
 
       {/* <Section delay={0.2}>
         <Divider my={6} />
-
         <Heading as="h3" fontSize={20} mb={4}>
           Collaborations
         </Heading>
-      </Section>
+      </Section> */}
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      {/* <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
           <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
             A website of the elite app development and contracting agency based
@@ -82,17 +90,17 @@ const Works = () => (
             A VR Creative tools for fashion brands
           </WorkGridItem>
         </Section>
-      </SimpleGrid>
+      </SimpleGrid> */}
 
-      <Section delay={0.4}>
+      {/* <Section delay={0.4}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
           Old works
         </Heading>
-      </Section>
+      </Section> */}
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      {/* <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
           <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
             Twitter client app for iPhone Safari
