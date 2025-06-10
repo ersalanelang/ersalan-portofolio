@@ -6,6 +6,7 @@ import thumbWebPanti from '../public/images/works/webpanti.png'
 import thumbBoneAge from '../public/images/works/boneage.jpg'
 import thumbHealthyDaily from '../public/images/works/healthydaily5.png'
 import thumbSHAP from '../public/images/works/shap_summary_plot5.png'
+import thumbCOX from '../public/images/works/Hazar-ratio_summary_plot4.png'
 
 // import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
 // import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
@@ -34,15 +35,7 @@ const Works = () => (
             Sistem Informasi Manajemen berbasis Website untuk UPT Rumah Pengasuhan Anak Wiloso Projo
           </WorkGridItem>
         </Section>
-        <Section>
-          <WorkGridItem
-            id="boneage"  //untuk mengarah ke halaman pages/webpanti.js
-            title="Bone Age Assessment"
-            thumbnail={thumbBoneAge}
-          >
-            Bone Age Assessment using CLAHE with VGG-19 Architecture
-          </WorkGridItem>
-        </Section>
+        
         <Section>
           <WorkGridItem
             id="healthydaily"  //untuk mengarah ke halaman pages/webpanti.js
@@ -54,9 +47,26 @@ const Works = () => (
         </Section>
         <Section>
           <WorkGridItem
+            id="boneage"  //untuk mengarah ke halaman pages/webpanti.js
+            title="Bone Age Assessment"
+            thumbnail={thumbBoneAge}
+          >
+            Bone Age Assessment using CLAHE with VGG-19 Architecture
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
             id="Explaining-Employee-Attrition-using-SHAP-and-Logistic-Regression"  //untuk mengarah ke halaman pages/webpanti.js
             title="Explaining Employee Attrition using SHAP and Logistic Regression"
             thumbnail={thumbSHAP}
+          >
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="Survival-Analysis-forEmployee-Attrition-using-Kaplan-Meier-and-CoxProportional-Hazards"  //untuk mengarah ke halaman pages/webpanti.js
+            title="Survival Analysis for Employee Attrition using Kaplan-Meier and Cox Proportional Hazards"
+            thumbnail={thumbCOX}
           >
           </WorkGridItem>
         </Section>

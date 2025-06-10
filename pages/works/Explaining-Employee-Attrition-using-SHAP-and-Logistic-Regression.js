@@ -12,6 +12,7 @@ import {
 import { ExternalLinkIcon, CopyIcon, CheckIcon} from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/post'
 import P from '../../components/paragraph'
+import Attribute  from '../../components/styled-text'
 import Layout from '../../components/layouts/article'
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
@@ -26,7 +27,7 @@ const codeString =
 data['Attrition'] = data['Attrition'].map({'Yes': 1, 'No': 0})
 data['OverTime'] = data['OverTime'].map({'Yes': 1, 'No': 0})`;
 
-const codeString2 = 
+const codeString1 = 
 `from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.333, random_state=42)
 # Importing sklearn logistic regression
@@ -38,7 +39,7 @@ logres = LogisticRegression()
 # Fitting the model (Training)
 logres.fit(X_train, Y_train)`;
 
-const codeString3 = 
+const codeString2 = 
 `import shap
 
 # Linear Explainer compatible with Logistic Regression
@@ -52,16 +53,12 @@ const accuracyFormula = `
     \\text{Accuracy} = \\frac{15 + 413}{15 + 413 + 6 + 56} = \\frac{428}{490} = 0.873
   `;
 
-
-
-
-
 const Work = () => {
   const [copied, setCopied] = useState(false)
   const toast = useToast()
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(codeString)
+  const handleCopy = (code) => {
+    navigator.clipboard.writeText(code)
     setCopied(true)
     toast({
       title: 'Copied!',
@@ -81,7 +78,7 @@ const Work = () => {
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Jupyter Notebook, Python</span>
+          <span>Python</span>
         </ListItem>
         <ListItem>
           <Meta>Tools</Meta>
@@ -95,7 +92,7 @@ const Work = () => {
         </ListItem>
         <ListItem>
           <Meta>Training Model</Meta>
-          <Link href="https://www.kaggle.com/code/caroletuesday/employee-attrition-using-shap-and-logistic-regres/edit#6.-Data-Preprocessing" target="_blank">
+          <Link href="https://www.kaggle.com/code/caroletuesday/employee-attrition-using-shap-and-logistic-regres" target="_blank">
             Kaggle/ErsalanElang <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -135,7 +132,7 @@ const Work = () => {
             leftIcon={copied ? <CheckIcon /> : <CopyIcon />}
             colorScheme="teal"
             variant="ghost"
-            onClick={handleCopy}
+            onClick={() => handleCopy(codeString)}
           >
             {copied ? 'Copied' : 'Copy'}
           </Button>
@@ -168,13 +165,13 @@ const Work = () => {
             leftIcon={copied ? <CheckIcon /> : <CopyIcon />}
             colorScheme="teal"
             variant="ghost"
-            onClick={handleCopy}
+            onClick={() => handleCopy(codeString1)}
           >
             {copied ? 'Copied' : 'Copy'}
           </Button>
         </Flex>
         <SyntaxHighlighter language="python" style={dracula} customStyle={{ margin: 0 }}>
-          {codeString2}
+          {codeString1}
         </SyntaxHighlighter>
       </Box>
       <P>
@@ -232,13 +229,13 @@ const Work = () => {
             leftIcon={copied ? <CheckIcon /> : <CopyIcon />}
             colorScheme="teal"
             variant="ghost"
-            onClick={handleCopy}
+            onClick={() => handleCopy(codeString2)}
           >
             {copied ? 'Copied' : 'Copy'}
           </Button>
         </Flex>
         <SyntaxHighlighter language="python" style={dracula} customStyle={{ margin: 0 }}>
-          {codeString3}
+          {codeString2}
         </SyntaxHighlighter>
       </Box>
       <P>
@@ -249,8 +246,8 @@ const Work = () => {
       </Box>
       <P>
         To gain a clearer and more interpretable understanding of the factors driving <strong>employee 
-          attrition</strong>,  The SHAP summary plot helped visualize how key features, such as <strong>OverTime</strong>, <strong>YearsSinceLastPromotion</strong>, 
-          and <strong>MonthlyIncome</strong> impact the likelihood of an employee leaving. 
+          attrition</strong>,  The SHAP summary plot helped visualize how key features, such as <Attribute>OverTime</Attribute>, <Attribute>YearsSinceLastPromotion</Attribute>, 
+          and <Attribute>MonthlyIncome</Attribute> impact the likelihood of an employee leaving. 
           For instance, <strong>excessive overtime</strong> and <strong>lack of career advancement</strong> showed 
           a strong positive SHAP value, signaling a higher attrition risk. 
           Conversely, <strong>higher job level</strong>, <strong>job satisfaction</strong>, 
@@ -260,8 +257,8 @@ const Work = () => {
       <P>
         These insights not only highlighted the most influential features but also 
         provided actionable directions for human resource strategies. The analysis 
-        revealed that both <strong>organizational structure</strong> (e.g., promotion opportunities, 
-        income level) and <strong>personal satisfaction</strong> (e.g., environment and relationship 
+        revealed that both <strong>organizational structure</strong> (e.g., Number of Companies Worked, 
+        Years since last promotion) and <strong>personal satisfaction</strong> (e.g., environment and relationship 
         satisfaction) significantly affect attrition. Additionally, some features like <strong>StockOptionLevel</strong>  and <strong>JobInvolvement</strong> displayed mixed effects, suggesting deeper, 
         case-specific analysis is needed. Overall, integrating SHAP values into the model 
         interpretation process enhanced transparency and allowed for more 
