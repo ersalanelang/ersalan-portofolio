@@ -7,6 +7,7 @@ import thumbBoneAge from '../public/images/works/boneage.jpg'
 import thumbHealthyDaily from '../public/images/works/healthydaily5.png'
 import thumbSHAP from '../public/images/works/shap_summary_plot5.png'
 import thumbCOX from '../public/images/works/Hazar-ratio_summary_plot4.png'
+import thumbValorant from '../public/images/works/valorant-img.png'
 
 // import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
 // import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
@@ -26,6 +27,15 @@ const Works = () => (
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem
+            id="Valorant"  //untuk mengarah ke halaman pages/webpanti.js
+            title="Valorant Custom 3D Website"
+            thumbnail={thumbValorant}
+          >
+            A custom portfolio project built to showcase a modern, immersive Valorant-themed website UI.
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem
             id="webpanti"  //untuk mengarah ke halaman pages/webpanti.js
