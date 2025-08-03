@@ -8,6 +8,7 @@ import thumbHealthyDaily from '../public/images/works/healthydaily5.png'
 import thumbSHAP from '../public/images/works/shap_summary_plot5.png'
 import thumbCOX from '../public/images/works/Hazar-ratio_summary_plot4.png'
 import thumbValorant from '../public/images/works/valorant-img.png'
+import thumbMinderva from '../public/images/works/minderva-thmb.png'
 
 // import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
 // import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
@@ -25,18 +26,15 @@ const Works = () => (
             Projects
           </Heading>
       </Section>
-
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem
-            id="Valorant"  //untuk mengarah ke halaman pages/webpanti.js
-            title="Valorant Custom 3D Website"
-            thumbnail={thumbValorant}
+            id="minderva"  //untuk mengarah ke halaman pages/webpanti.js
+            title="Minderva - AI Companion SaaS Platform"
+            thumbnail={thumbMinderva}
           >
-            A custom portfolio project built to showcase a modern, immersive Valorant-themed website UI.
+            Build & Personalize Your AI Learning Companion.
           </WorkGridItem>
-        </Section>
-        <Section>
           <WorkGridItem
             id="webpanti"  //untuk mengarah ke halaman pages/webpanti.js
             title="Website Panti Asuhan"
@@ -45,8 +43,14 @@ const Works = () => (
             Sistem Informasi Manajemen berbasis Website untuk UPT Rumah Pengasuhan Anak Wiloso Projo
           </WorkGridItem>
         </Section>
-        
         <Section>
+          <WorkGridItem
+            id="Valorant"  //untuk mengarah ke halaman pages/webpanti.js
+            title="Valorant Custom 3D Website"
+            thumbnail={thumbValorant}
+          >
+            A custom portfolio project built to showcase a modern, immersive Valorant-themed website UI.
+          </WorkGridItem>
           <WorkGridItem
             id="healthydaily"  //untuk mengarah ke halaman pages/webpanti.js
             title="HealtyDaily – Home Fitness Design App "
