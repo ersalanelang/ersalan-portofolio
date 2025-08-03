@@ -174,7 +174,7 @@ const Work = () => {
       </List>
          <P>
           Minderva as an innovative AI companion platform that revolutionizes personalized learning through 
-          voice-powered interactions. The name I chose combines <strong>"Mind"</strong> and <strong>"Minerva"</strong> 
+          voice-powered interactions. The name I chose combines <strong>&ldquo;Mind&ldquo;</strong> and <strong>&ldquo;Minerva&ldquo;</strong> 
           (Goddess of Wisdom), represented by an owl logo symbolizing knowledge and wisdom. This platform allows users to create 
           custom AI companions with personalized subjects, topics, voices, and conversation styles for 
           enhanced educational experiences.
