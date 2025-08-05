@@ -42,7 +42,7 @@ export const WorkGridItem = ({
         placeholder="blur"
       />
       <LinkOverlay as="div" href={`/${category}/${id}`}>
-        <Text mt={2} fontSize={20}>
+        <Text mt={2} mb={5} fontSize={20}>
           {title}
         </Text>
       </LinkOverlay>

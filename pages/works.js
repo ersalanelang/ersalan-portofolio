@@ -9,6 +9,7 @@ import thumbSHAP from '../public/images/works/shap_summary_plot5.png'
 import thumbCOX from '../public/images/works/Hazar-ratio_summary_plot4.png'
 import thumbValorant from '../public/images/works/valorant-img.png'
 import thumbMinderva from '../public/images/works/minderva-thmb.png'
+import thumbDashboarShadCN from  '../public/images/works/dashboard-shadcn-thmb.png'
 
 // import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
 // import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
@@ -23,7 +24,7 @@ const Works = () => (
       <Section delay={0.1}>
         <Divider my={6} />
           <Heading as="h3" fontSize={20} mb={4}>
-            Projects
+            Website and Design
           </Heading>
       </Section>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -33,14 +34,21 @@ const Works = () => (
             title="Minderva - AI Companion SaaS Platform"
             thumbnail={thumbMinderva}
           >
-            Build & Personalize Your AI Learning Companion.
+            {/* Build & Personalize Your AI Learning Companion. */}
           </WorkGridItem>
           <WorkGridItem
             id="webpanti"  //untuk mengarah ke halaman pages/webpanti.js
-            title="Website Panti Asuhan"
+            title="Orphanage Management Dashboard – Modern Web Platformn"
             thumbnail={thumbWebPanti}
           >
-            Sistem Informasi Manajemen berbasis Website untuk UPT Rumah Pengasuhan Anak Wiloso Projo
+            {/* Sistem Informasi Manajemen berbasis Website untuk UPT Rumah Pengasuhan Anak Wiloso Projo */}
+          </WorkGridItem>
+          <WorkGridItem
+            id="dashboard-shadcn"  //untuk mengarah ke halaman pages/webpanti.js
+            title="Admin Dashboard Project Management - Modern Web Application"
+            thumbnail={thumbDashboarShadCN}
+          >
+            {/* An admin dashboard interface built with ShadCN components for modern, responsive, and customizable UI design. */}
           </WorkGridItem>
         </Section>
         <Section>
@@ -49,23 +57,37 @@ const Works = () => (
             title="Valorant Custom 3D Website"
             thumbnail={thumbValorant}
           >
-            A custom portfolio project built to showcase a modern, immersive Valorant-themed website UI.
+            {/* A custom portfolio project built to showcase a modern, immersive Valorant-themed website UI. */}
           </WorkGridItem>
           <WorkGridItem
             id="healthydaily"  //untuk mengarah ke halaman pages/webpanti.js
             title="HealtyDaily – Home Fitness Design App "
             thumbnail={thumbHealthyDaily}
           >
-            Design APP for Fitness based on Android
+            {/* Design APP for Fitness based on Android */}
           </WorkGridItem>
         </Section>
+      </SimpleGrid>
+      <Section delay={0.1}>
+        <Divider my={3} />
+          <Heading as="h3" fontSize={20} mb={4}>
+            Data Science and Analyst
+          </Heading>
+      </Section>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem
             id="boneage"  //untuk mengarah ke halaman pages/webpanti.js
             title="Bone Age Assessment"
             thumbnail={thumbBoneAge}
           >
-            Bone Age Assessment using CLAHE with VGG-19 Architecture
+            {/* Bone Age Assessment using CLAHE with VGG-19 Architecture */}
+          </WorkGridItem>
+          <WorkGridItem
+            id="Survival-Analysis-forEmployee-Attrition-using-Kaplan-Meier-and-CoxProportional-Hazards"  //untuk mengarah ke halaman pages/webpanti.js
+            title="Survival Analysis for Employee Attrition using Kaplan-Meier and Cox Proportional Hazards"
+            thumbnail={thumbCOX}
+          >
           </WorkGridItem>
         </Section>
         <Section>
@@ -73,14 +95,6 @@ const Works = () => (
             id="Explaining-Employee-Attrition-using-SHAP-and-Logistic-Regression"  //untuk mengarah ke halaman pages/webpanti.js
             title="Explaining Employee Attrition using SHAP and Logistic Regression"
             thumbnail={thumbSHAP}
-          >
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="Survival-Analysis-forEmployee-Attrition-using-Kaplan-Meier-and-CoxProportional-Hazards"  //untuk mengarah ke halaman pages/webpanti.js
-            title="Survival Analysis for Employee Attrition using Kaplan-Meier and Cox Proportional Hazards"
-            thumbnail={thumbCOX}
           >
           </WorkGridItem>
         </Section>

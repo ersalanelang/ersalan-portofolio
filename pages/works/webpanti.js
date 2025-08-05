@@ -15,7 +15,7 @@ const Work = () => (
   <Layout title="webpanti">
     <Container>
       <Title>
-        Website Panti Asuhan <Badge>2022</Badge>
+        Orphanage Management Dashboard – Modern Web Platform <Badge>2022</Badge>
       </Title>
       <List ml={4} my={4}>
         <ListItem>
